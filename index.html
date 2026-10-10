@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Frete</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Frete Fácil</h1>
+        <p>Calcule o frete usando seu CEP</p>
+    </header>
+
+    <main>
+        <section class="container">
+            <h2>Calcular Frete</h2>
+
+            <label for="cep">Digite o CEP de destino:</label>
+            <input type="text" id="cep" placeholder="Ex: 60000-000"
+                   maxlength="9">
+
+            <button onclick="calcularFrete()">Consultar CEP e calcular</button>
+
+            <div id="resultado">
+                <p>O endereço e o valor do frete aparecerão aqui.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto acadêmico - ADS</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
